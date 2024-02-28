@@ -1,3 +1,14 @@
+
+//www.exemplo.com.br/livros
+//GET
+//função que acessa a base e devolve os livros
+
+const app = express()
+
+app.get('/livros', () => {
+    
+})
+
 // function eAgora(){
 //     let cont = 1
 //     function f1(){
