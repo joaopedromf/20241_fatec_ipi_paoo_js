@@ -1,13 +1,65 @@
 // Funções
-// void m(){} se fosse Java
-function hello(){
-    console.log('oi')
+
+function f3(){
+
 }
+console.log(f3())
+
+const hello = () => console.log("Hello")
 hello()
-function hello(nome){
-    console.log('oi, ' + nome)
+
+const dobro = valor => valor * 2
+
+let triplo = (valor) => {
+    return valor * 3
 }
-hello('Rodrigo')
+
+const ehPar = n => {n % 2 === 0}
+console.log(ehPar(10))
+
+// const f = () => {}
+// const umArgumento = n => {
+//     console.log(n);
+// }
+
+// const soUmaLinha = () => console.log("oi")
+
+// const teste1 = (a, b) => {
+//     return a + b
+// }
+
+// const teste2 = (a, b) => a + b
+
+// const dobro = function (n){
+//     return 2 * n;
+// }
+
+// const result = dobro(6);
+// console.log(result);
+
+// // valor padrão para um parâmetro
+// const triplo = function(n = 5){
+//     return 3 * n;
+// }
+
+// console.log(triplo());
+// console.log(triplo(10));
+
+// function soma(a, b){
+//     return a + b;
+// }
+// const resultado = soma(2,3);
+// console.log(resultado);
+
+// // void m(){} se fosse Java
+// function hello(){
+//     console.log('oi')
+// }
+// hello()
+// function hello(nome){
+//     console.log('oi, ' + nome)
+// }
+// hello('Rodrigo')
 
 // Declaração
 // v1 = []
