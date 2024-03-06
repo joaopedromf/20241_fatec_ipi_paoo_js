@@ -1,13 +1,80 @@
+// Uma calculadora faz soma e subtração
+// Cada operação envolve dois operandos
+// soma deve utilizar arrow function, sem return
+// subtração deve ser função regular
+let calculadora = {
+    soma: (a, b) => a + b,
+    subtracao: function (a, b){
+        return a - b
+    }
+}
+
+console.log(calculadora.soma(2,3))
+
+// Uma concessionária tem CNPJ e endereço. Ela possui alguns carros em estoque. Cada um deles tem
+// marca, modelo e ano de fabricação
+// acessar a marca do segundo veículo
+// let concessionaria = {
+//     cnpj: '12345678000190',
+//     endereco: {
+//         logradouro: 'Rua A',
+//         numero: 100
+//     },
+//     carros: [
+//         {
+//             marca: 'Chevrolet',
+//             modelo: 'Prisma',
+//             anoFabricacao: 2015
+//         },
+//         {
+//             marca: 'Fiat',
+//             modelo: 'Uno',
+//             anoFabricacao: 2002
+//         }
+//     ]
+// }
+
+// for(let carro of concessionaria.carros){
+//     console.log(`Marca: ${carro.marca}, Modelo: ${carro.modelo}`)
+// }
+
+// console.log(concessionaria.carros[1].marca)
+// console.log(concessionaria['carros'][1]['marca'])
+
+// se chama Maria, tem 21 anos e mora na rua B, 14
+// let pessoa = {
+//     nome: 'Maria',
+//     idade: 21,
+//     endereco: {
+//         logradouro: 'Rua B',
+//         numero: 14
+//     }
+// }
+
+// const endereco = 'endereco'
+// console.log(pessoa['endereco']['logradouro'])
+// console.log(pessoa.endereco.numero)
+// console.log(pessoa['endereco'].numero)
+// console.log(pessoa.endereco['logradouro'])
+
+// uma pessoa chamada joão que tem 17 anos de idade
+// JSON: Javascript Object Notation
+// let pessoa = {
+//     nome: 'João',
+//     idade: 17
+// }
+// console.log(pessoa.nome)
+// console.log(pessoa['idade'])
 
 //www.exemplo.com.br/livros
 //GET
 //função que acessa a base e devolve os livros
 
-const app = express()
+// const app = express()
 
-app.get('/livros', () => {
+// app.get('/livros', () => {
     
-})
+// })
 
 // function eAgora(){
 //     let cont = 1
