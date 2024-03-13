@@ -1,41 +1,89 @@
-const soma = (a, b) => {
-    return new Promise((resolve, reject) => {
-        // se a e b forem positivos
-        // chamar resolve passando a + b como parâmetro
-        // caso contrário
-        // chamar reject passando o texto "não use negativos" como parâmetro
-        if(a > 0 && b > 0){
-            resolve(a + b)
-        }
-        else{
-            reject('Não use negativos')
-        }
-    })
-}
+// OpenWeatherMap
 
-soma(2, 7)
-.then((resultado) => {
-    console.log(`Resultado: ${resultado}`)
-})
-.catch((erro) => {
-    console.log(`Erro: ${erro}`)
-})
+//1 + 2 + 3 + ... + (n-1) + n
+//verificar o valor de n
+// se for negativo, chamar reejct passando o teto "somente positivos" como parãmetro para ela
+// caso contrário, continuar fazendo o que já faz
 
-soma(-2, 5)
-.then((resultado) => {
-    console.log(`Resultado: ${resultado}`)
-    soma(2, 9)
-    .then((resultado) => {
-        console.log(`Resultado: ${resultado}`)
-        soma(11, 13)
-        .then((resultado) => console.log(`Resultado: ${resultado}`))
-        .catch((erro) => console.log(`Erro: ${erro}`))
-    })
-    .catch((erro) => console.log(`Erro: ${erro}`))
-})
-.catch((erro) => {
-    console.log(`Erro: ${erro}`)
-})
+// function calculoDemorado (n){
+//     let p = new Promise((resolve, reject) => {
+//         if(n < 0){
+//             reject('Somente positivos')
+//         }
+//         else{
+//             let res = 0
+//             for(let i = 1; i<=n; i++) res += i
+//             resolve(res)
+//         }
+//     })
+//     return p
+// }
+
+// calculoDemorado(100)
+// .then((res) => {
+//     console.log(res)
+//     calculoDemorado(6)
+//     .then(res => {
+//         console.log(res)
+//         calculoDemorado(7)
+//         .then(res => console.log(res))
+//     })
+// })
+// .catch((erro) => console.log(`Erro: ${erro}`))
+
+// function calculoRapidinho(n){
+//     return Promise.resolve((n / 2) * (n + 1))
+// }
+// calculoRapidinho(100).then(resultado => console.log(resultado))
+
+// function calculoDemorado(n){
+//     let res = 0
+//     for(let i = 1; i<=n; i++) res += 1
+//     return res
+// }
+
+// const resultado = calculoDemorado(100)
+// console.log(resultado)
+// console.log('outra coisa qualquer')
+
+// const soma = (a, b) => {
+//     return new Promise((resolve, reject) => {
+//         // se a e b forem positivos
+//         // chamar resolve passando a + b como parâmetro
+//         // caso contrário
+//         // chamar reject passando o texto "não use negativos" como parâmetro
+//         if(a > 0 && b > 0){
+//             resolve(a + b)
+//         }
+//         else{
+//             reject('Não use negativos')
+//         }
+//     })
+// }
+
+// soma(2, 7)
+// .then((resultado) => {
+//     console.log(`Resultado: ${resultado}`)
+// })
+// .catch((erro) => {
+//     console.log(`Erro: ${erro}`)
+// })
+
+// soma(-2, 5)
+// .then((resultado) => {
+//     console.log(`Resultado: ${resultado}`)
+//     soma(2, 9)
+//     .then((resultado) => {
+//         console.log(`Resultado: ${resultado}`)
+//         soma(11, 13)
+//         .then((resultado) => console.log(`Resultado: ${resultado}`))
+//         .catch((erro) => console.log(`Erro: ${erro}`))
+//     })
+//     .catch((erro) => console.log(`Erro: ${erro}`))
+// })
+// .catch((erro) => {
+//     console.log(`Erro: ${erro}`)
+// })
 
 // descobrir como faz o catch
 
